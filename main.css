@@ -9,9 +9,11 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container {
+    position:relative;
     margin: auto;
     padding:1rem;
-    width:600px;
+    padding-bottom:2rem;
+    width:630px;
 }
 #meal, #charges, #earnings {
     margin-top:15px;
@@ -39,15 +41,34 @@ body {
         width: 50px;
     }
     #tip {
-        width: 30px;
+        width: 35px;
     }
+    form[name="mealForm"] {
+        position:relative;
+    }
+        form .showError {
+            position:absolute;
+            margin-top:8px;
+            padding:0 15px;
+            left:0;
+            color:red;
+            font-size:.8em;
+        }
     form center {
         margin-top:40px;
         margin-bottom:43px;
     }
-table td {
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+td {
     font-size:.90em;
     padding:5px 3px;
+}
+td.textcol {
+    text-align:right;
 }
 
 #charges_earnings {
@@ -63,10 +84,12 @@ table td {
         margin-top:4px;
         margin-bottom:7px;
     }
-#charges table {
-    border-collapse: collapse;
-}
 .bottom-border {
     border-bottom: 2px solid black;
 }
 
+#resetBtn {
+    position:absolute;
+    right:20px;
+    bottom:0;
+}
