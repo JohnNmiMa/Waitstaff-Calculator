@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+    margin: auto;
+    padding:1rem;
+    width:600px;
+}
+#meal, #charges, #earnings {
+    margin-top:15px;
+    border:2px solid black;
+    padding:0 20px;
+}
+#meal {
+    display:inline-block;
+    vertical-align:top;
+}
+    h1 {
+        text-align:center;
+    }
+    .divider {
+        border-top:2px solid black;
+        margin:7px -18px;
+    }
+    h4 {
+        margin-top:7px;
+    }
+    #bmp {
+        width: 100px;
+    }
+    #taxRate {
+        width: 50px;
+    }
+    #tip {
+        width: 30px;
+    }
+    form center {
+        margin-top:40px;
+        margin-bottom:43px;
+    }
+table td {
+    font-size:.90em;
+    padding:5px 3px;
+}
+
+#charges_earnings {
+    display:inline-block;
+    vertical-align:top;
+    margin-left:30px;
+}
+    #charges_earnings .divider {
+        border-top:2px solid black;
+    }
+    .totaldivider {
+        border-top:2px solid black;
+        margin-top:4px;
+        margin-bottom:7px;
+    }
+#charges table {
+    border-collapse: collapse;
+}
+.bottom-border {
+    border-bottom: 2px solid black;
+}
+
